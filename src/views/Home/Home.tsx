@@ -8,6 +8,7 @@ import { experiences } from "../../utils/datas/experiences";
 
 
 export default function Home() {
+
   return (
     <HomeContainer>
       <section id="home">
@@ -101,8 +102,8 @@ export default function Home() {
       <section id="contact">
         <h2><span>Rentrons</span> en Contact</h2>
         <form>
-          <Field type={"text"} id={"firstname"} label={"Prénom"}/>
-          <Field type={"text"} id={"lastname"} label={"Nom"}/>
+          <Field type={"text"} id={"firstname"} label={"Prénom"} />
+          <Field type={"text"} id={"lastname"} label={"Nom"} />
           <Field type={"area"} id={"message"} holder={"Votre message"}/>
           <button>Envoyer</button>
         </form>

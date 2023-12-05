@@ -199,8 +199,10 @@ export const HomeContainer = styled.main`
     #exp {}
 
     #banner {
+        width: 100%;
         padding: 50px 10px;
         background: url(${home}) no-repeat;
+        background-size: cover;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
@@ -231,7 +233,7 @@ export const HomeContainer = styled.main`
             width: 80%;
             max-width: 1200px;
             min-width: 250px;
-            margin: 0 auto;
+            margin: 0 auto 50px;
 
             textarea, button {
                 border: 2px solid grey;
@@ -267,10 +269,17 @@ export const HomeContainer = styled.main`
                 top: 7px;
                 left: 15px;
                 transition: top 0.3s ease-in-out;
+                font-size: 1.2rem;
             }
 
-            label.active {
-                top: -15px;
+            div:focus-within label, label.active {
+                top: -35px;
+                color: #00f;
+            }
+
+            input {
+                padding-left: 15px;
+                font-size: 1.1rem;
             }
 
             textarea {
