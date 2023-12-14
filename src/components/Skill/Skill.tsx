@@ -19,10 +19,10 @@ export default function Skill({skill, progress}: SkillProps) {
     })
 
     return (
-        <SkillContainer color={colorProgress}>
-            <h3>{skill}</h3>
-            <p>{progress}%</p>
-            <progress max="100" value={progress} ></progress>
+        <SkillContainer color={colorProgress} >
+            <h3 data-aos="zoom-in" data-aos-duration="1500">{skill}</h3>
+            <p data-aos="zoom-in" data-aos-duration="2000">{progress}%</p>
+            <progress max="100" value={progress} data-aos="zoom-in" data-aos-duration="3000"></progress>
         </SkillContainer>
     )
 }

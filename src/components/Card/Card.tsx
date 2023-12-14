@@ -3,7 +3,7 @@ import { CardContainer } from "./Card.style";
 
 export default function Card({type, srcImg, title, time, description, link, color}: CardProps) {
   return (
-    <CardContainer className={type === "port" ? "project" : "experience"} color={color ? color : ""}>
+    <CardContainer className={type === "port" ? "project" : "experience"} color={color ? color : ""} data-aos="zoom-in-up">
         {type !== "port" && (<div><img src={srcImg} alt={`Expérience chez ${title}`} /></div>)}
         <article className="card">
           {type === "port" && (<img src={srcImg} alt={`aperçu du projet ${title}`} />)}

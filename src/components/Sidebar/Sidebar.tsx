@@ -8,7 +8,7 @@ export default function Sidebar() {
     }
 
     return (
-        <div className={toggle ? "sidebar active" : "sidebar"}>
+        <div className={toggle ? "sidebar active" : "sidebar"} data-aos="fade-right">
             <button className={toggle ? "menu active" : "menu"} onClick={displayMenu}>
                 <div className="row"></div>
             </button>

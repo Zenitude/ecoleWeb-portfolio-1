@@ -64,6 +64,16 @@ export const HomeContainer = styled.main`
                 height: 40px;
             }
         }
+
+        .Typewriter {
+            font-size: 1.5rem;
+        }
+
+        .language-1 { color: red; font-weight: bold;}
+        .language-2 { color: green; font-weight: bold;}
+        .language-3 { color: blue; font-weight: bold;}
+        .language-4 { color: purple; font-weight: bold;}
+        .language-5 { color: orange; font-weight: bold;}
     }
 
     #pres {
