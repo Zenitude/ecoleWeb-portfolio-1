@@ -66,27 +66,36 @@ export default function Home() {
         <h2>Mes compétences</h2>
         <div className="skills">
           {
-            skills.map((skill, index) => <Skill key={`${index}-${skill.skillName.replace(' ', '-')}`} skill={skill.skillName} progress={skill.ratio} />)
+            skills.map((skill, index) => 
+              <Skill 
+                key={`${index}-${skill.skillName.replace(' ', '-')}`} 
+                skill={skill.skillName} 
+                progress={skill.ratio} 
+              />
+            )
           }
         </div>
       </section>
 
       <section id="exp">
         <h2>Mes expériences</h2>
-        <div className="exp">
+        <div className="experiences">
           <div className="bar"></div>
-          {
-            experiences.map((exp, index) => 
-              <Card 
-                key={`${index}-${exp.company}`} 
-                type="exp" 
-                srcImg={exp.srcImg} 
-                title={exp.company} 
-                time={{start: exp.dates.start, end: exp.dates.end}} 
-                description={exp.desc} 
-              />
-            )
-          }
+          <div className="exp">
+            {
+              experiences.map((exp, index) =>
+                <Card
+                  key={`${index}-${exp.company}`}
+                  type="exp"
+                  srcImg={exp.srcImg}
+                  title={exp.company}
+                  time={{start: exp.dates.start, end: exp.dates.end}}
+                  description={exp.desc}
+                  color={exp.color}
+                />
+              )
+            }
+          </div>
           <div className="plane">
             <img src={plane} alt="" />
           </div>

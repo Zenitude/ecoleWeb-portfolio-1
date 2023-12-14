@@ -8,4 +8,9 @@ export type CardProps = {
     };
     description: string;
     link?: string;
+    color?: string;
+}
+
+export type CardStyle = {
+    color: string;
 }

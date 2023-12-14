@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         height: 100%;
         font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
     }
 
     h1 {
@@ -93,7 +94,7 @@ export const LayoutContainer = styled.div`
         position: fixed;
         width: 300px;
         height: 100%;
-        z-index: 1;
+        z-index: 0;
 
         nav {
             transform: translateX(-110%);
@@ -170,7 +171,10 @@ export const LayoutContainer = styled.div`
 
     footer {
         width: 100%;
-        height: 70px;
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     main {

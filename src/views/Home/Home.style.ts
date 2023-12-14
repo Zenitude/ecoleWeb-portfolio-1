@@ -5,7 +5,7 @@ export const HomeContainer = styled.main`
     
     #home {
         border-bottom: 1px dashed #333;
-        z-index: 0;
+        z-index: -1;
         height: 500px;
         background: url(${home}) no-repeat top right;
         background-size: cover;
@@ -70,9 +70,10 @@ export const HomeContainer = styled.main`
         color: #f1f1f1;
         background: linear-gradient(to right, #29323c, #485563);
         padding: 50px 40px;
-        min-height: 400px;
+        min-height: 500px;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         gap: 20px;
 
@@ -168,10 +169,11 @@ export const HomeContainer = styled.main`
         background: linear-gradient(to right, #29323c, #485563);
         color: #f1f1f1;
         padding: 50px 10px;
+        min-height: 500px;
 
         h2 {
             font-size: 28px;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             text-align: center;
         }
 
@@ -183,7 +185,7 @@ export const HomeContainer = styled.main`
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 50px 20px;
 
             article {
                 width: 40%;
@@ -196,12 +198,125 @@ export const HomeContainer = styled.main`
         }
     }
 
-    #exp {}
+    #exp {
+        padding: 50px 10px;
+
+        h2 {
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .experiences {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            max-width: 800px;
+            min-width: 240px;
+            margin: 0 auto;
+
+            .bar {
+                position: absolute;
+                left: 20px;
+                width: 10px;
+                height: 100%;
+                background-color: #000;
+                z-index: 1;
+            }
+
+            .experience {
+                display: flex;
+                z-index: 2;
+                gap: 10px;
+                position: relative;
+                width: 100%;
+                max-width: 800px;
+                padding-bottom: 50px;
+
+                & > div {
+                    max-width: 50px;
+                    min-width: 50px;
+                    height: 50px;
+                    border: 2px solid rgb(0,0,0);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }                    
+                }
+
+                article {
+                    min-height: 200px;
+                    position: relative;
+                    top: -10px;
+                    left: 10px;
+                    z-index: 5;
+                    background-color: #fff;
+
+                    h3 {
+                        margin-bottom: 20px;
+                        font-size: 1.5rem;
+                    }
+
+                    .desc {
+                        background-color: #fff;
+                        border: 2px solid #000;
+                        z-index: 5;
+                        width: 100%;
+                        height: 100%;
+                        padding: 20px;
+                    }
+
+                    &:hover {
+                        top: 0;
+                        left: 0;
+
+                        &::before {
+                            top: 0;
+                            height: 0;
+                            border: none;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        border: 1px solid #000;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 10px;
+                        left: -10px;
+                        z-index: -1;
+                    }
+                }
+            }
+
+            .plane {
+                max-width: 50px;
+                min-width: 50px;
+                height: 50px;
+                border: 2px solid rgb(0,0,0);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                } 
+            }
+        }
+    }
 
     #banner {
         width: 100%;
         padding: 50px 10px;
-        background: url(${home}) no-repeat;
+        background: url(${home}) no-repeat top right;
         background-size: cover;
         background-attachment: fixed;
         display: flex;
@@ -210,6 +325,7 @@ export const HomeContainer = styled.main`
         align-items: center;
         gap: 20px;
         font-size: 24px;
+        min-height: 200px;
     }
 
     #contact {
@@ -290,10 +406,6 @@ export const HomeContainer = styled.main`
                 resize: none;
             }
         }
-    }
-    
-    img {
-        width: 50px;
     }
 
     @keyframes pulse {

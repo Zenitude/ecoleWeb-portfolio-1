@@ -3,7 +3,7 @@ export type LinkProps = {
     srcImg?: string;
     altImg?: string;
     txt?: string;
-    apparence?: {
+    apparence: {
       outline: boolean;
       color: string;
     };

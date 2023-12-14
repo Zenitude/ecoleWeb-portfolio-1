@@ -8,7 +8,8 @@ export const experiences = [
             start: "2019",
             end: ""
         },
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In perferendis dignissimos doloribus quaerat corrupti facere ratione modi vel. Voluptatem minima facilis eaque eum quia voluptatibus dolorem minus incidunt repellendus culpa?"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In perferendis dignissimos doloribus quaerat corrupti facere ratione modi vel. Voluptatem minima facilis eaque eum quia voluptatibus dolorem minus incidunt repellendus culpa?",
+        color: "#fb97a0"
     },
     {
         srcImg: instagram,
@@ -17,7 +18,8 @@ export const experiences = [
             start: "2017",
             end: "2018"
         },
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?"
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?",
+        color: "#bfe2ca"
     },
     {
         srcImg: amazon,
@@ -26,7 +28,8 @@ export const experiences = [
             start: "2015",
             end: "2016"
         },
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?"
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?",
+        color: "#a6daef"
     },
     {
         srcImg: apple,
@@ -35,6 +38,7 @@ export const experiences = [
             start: "2012",
             end: "2014"
         },
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?"
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?",
+        color: "#d0e2ec"
     }
 ]
